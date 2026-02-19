@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://bankr.bot",
+    "name": "Bankr.bot",
+    "snippet": "Crypto-rails made easy. Every agent gets a wallet and access to swaps, liquidity provision, advanced orders, and arbitrary onchain transactions out of the box.",
+    "host_name": "bankr.bot",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.bankr.bot",
+    "name": "Bankr Documentation",
+    "snippet": "Every agent gets a cross-chain wallet . Trade, deploy contracts, manage DeFi. Gas fees covered. No extra setup required. Token Launchpad​. Fair launch a token ...",
+    "host_name": "docs.bankr.bot",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.bankr.chat",
+    "name": "Bankr Documentation | Bankr",
+    "snippet": "7 days ago — Bankr gives your AI agent crypto wallets, trading, and token launching — so it earns trading fees and funds its own compute.",
+    "host_name": "docs.bankr.chat",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/BankrBot/tokenized-agents",
+    "name": "BankrBot/tokenized-agents",
+    "snippet": "Jan 28, 2026 — This repository tracks AI agents that have launched tokens through Bankr . Tokens serve as a powerful primitive that allows agents to become ...",
+    "host_name": "github.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.bankr.bot/token-launching/overview",
+    "name": "Token Launching Overview",
+    "snippet": "Token Launching Overview. Launch a token for your AI agent and earn trading fees automatically. This is how agents fund themselves.",
+    "host_name": "docs.bankr.bot",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.bankr.bot/getting-started/overview",
+    "name": "Platform Overview",
+    "snippet": "Bankr is a Web3 AI companion platform that integrates LLM technology with DeFi protocols. It enables AI agents to execute blockchain transactions through ...",
+    "host_name": "docs.bankr.bot",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.kucoin.com/news/articles/a-deep-dive-into-the-ai-agent-bankr-and-its-ecosystem-token-bankrcoin-bnkr",
+    "name": "BankrCoin (BNKR) Ecosystem Explained",
+    "snippet": "Feb 3, 2026 — Explore the AI agent Bankr and its token $BNKR , including tokenomics, utility, and future roadmap.",
+    "host_name": "www.kucoin.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://bankr.bot/bankr-manifesto.pdf",
+    "name": "Bankr Manifesto",
+    "snippet": "Jan 6, 2025 — Bankr took innovation a step further by launching its own token, $BNKR , using. Clankr, an AI-driven token deployment bot. This playful yet ... 4 pages",
+    "host_name": "bankr.bot",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/bankrbot/highlights",
+    "name": "Bankr (@bankrbot) / Highlights / X",
+    "snippet": "Jan 31, 2026 — Building financial infra for agents to fund themselves. Launch a token , trading fees pay for API costs. Wallets, tools, treasury automation.",
+    "host_name": "x.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.mexc.co/en-IN/learn/article/what-is-bankr-bnkr-the-ai-powered-crypto-banker-using-x402-payments/1",
+    "name": "What Is Bankr ($BNKR)? The AI-Powered Crypto Banker",
+    "snippet": "Oct 29, 2025 — 1) Bankr is an AI -driven DeFi assistant that lets users trade, bridge, and manage crypto through natural-language messages on X and Farcaster. 2) ...",
+    "host_name": "www.mexc.co",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

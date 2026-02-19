@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://docs.bankr.bot",
+    "name": "Bankr Documentation",
+    "snippet": "Every agent gets a cross-chain wallet. Trade, deploy contracts, manage DeFi. Gas fees covered. No extra setup required. Token Launchpad​. Fair launch a token ...",
+    "host_name": "docs.bankr.bot",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.mexc.co/en-IN/learn/article/what-is-bankr-bnkr-the-ai-powered-crypto-banker-using-x402-payments/1",
+    "name": "What Is Bankr ($BNKR)? The AI-Powered Crypto Banker Using x402",
+    "snippet": "Supporting Base, Solana, and Polygon, Bankr removes the need for complex wallet interfaces and manual approvals. Its vision, as stated in the ...",
+    "host_name": "www.mexc.co",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://npmjs.com/package/%40agentsbankai/sdk",
+    "name": "@agentsbankai/sdk - npm",
+    "snippet": "Official SDK for AgentsBank.ai - Crypto banking infrastructure for AI agents. Latest version: 1.0.3, last published: 2 days ago. Missing: Bankr cross- Base Polygon",
+    "host_name": "npmjs.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.crossmint.com/wallets/overview",
+    "name": "Overview of Wallets",
+    "snippet": "Create a wallet. Create wallets for your users, AI agents, and treasury on any chain, including EVM (Base, Polygon, etc.), Solana and Stellar.Create wallet ...",
+    "host_name": "docs.crossmint.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://thegrid.id/discovery/productType/onchain-data-api",
+    "name": "List of OnChain Data API companies in Web3 - The Grid",
+    "snippet": "BNB Smart Chain · Base ...",
+    "host_name": "thegrid.id",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://blockapex.io/top-performing-blockchain-to-deploy-ai-agents",
+    "name": "Top Performing Blockchain to Deploy AI Agents - BlockApex",
+    "snippet": "We'll explore the concept of AI agents and their integration with blockchain technology. We'll also list the top-performing blockchains for deploying AI agents.",
+    "host_name": "blockapex.io",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://polygon.technology/payments/agentic-payments",
+    "name": "Agentic Payments Infrastructure | x402 on Polygon",
+    "snippet": "Enable autonomous, programmable payments for AI agents and APIs. Polygon + x402 delivers instant finality, ultra-low fees, and global rails. Missing: SDK Solana",
+    "host_name": "polygon.technology",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.chaingpt.org",
+    "name": "ChainGPT - Unleash The Power of Blockchain AI",
+    "snippet": "Developers and businesses can integrate ChainGPT AI via ...",
+    "host_name": "www.chaingpt.org",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.blockchainappfactory.com/polygon-token-development",
+    "name": "Polygon Token Development | Launch Your Own",
+    "snippet": "We migrate tokens from Ethereum, BSC, or other networks to Polygon, improving scalability, reducing transaction costs, and providing cross-chain compatibility.",
+    "host_name": "www.blockchainappfactory.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/AIonBase_/status/2021850959006028039",
+    "name": "every agent is going to have a wallet. @coinbase shipped agentic",
+    "snippet": "bankr is multichain ( @base, @ethereum, @0xPolygon, @unichain, @solana). AWAL is base only. 5. both are gasless with solid revenue models. bankr ... Missing: SDK cross- chain Polygon",
+    "host_name": "x.com",
+    "rank": 9,
+    "date": "Feb 11, 2026",
+    "favicon": ""
+  }
+]

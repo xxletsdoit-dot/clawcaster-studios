@@ -1,0 +1,120 @@
+// ClawCaster Studios - Prisma Schema
+// Onchain Entertainment Pipeline with Bankr-style Integration
+// Supports SQLite (development) and PostgreSQL (production)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_DATABASE_URL")
+}
+
+model Agent {
+  id            String   @id @default(cuid())
+  name          String
+  type          String
+  description   String?
+  walletAddress String   @unique
+  publicKey     String?
+  isActive      Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  contributions ProjectAgent[]
+  earnings      Revenue[]
+
+  @@index([type])
+}
+
+model Project {
+  id              String   @id @default(cuid())
+  title           String
+  prompt          String
+  status          String   @default("draft")
+  script          String?
+  videoUrl        String?
+  thumbnailUrl    String?
+  ipfsHash        String?
+  tokenId         String?
+  chain           String?
+  contractAddress String?
+  totalRevenue    Float    @default(0)
+  streamCount     Int      @default(0)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  agents      ProjectAgent[]
+  assets      Asset[]
+  revenueLogs Revenue[]
+
+  @@index([status])
+  @@index([createdAt])
+}
+
+model ProjectAgent {
+  id          String   @id @default(cuid())
+  projectId   String
+  agentId     String
+  role        String
+  status      String   @default("pending")
+  output      String?
+  startedAt   DateTime?
+  completedAt DateTime?
+  createdAt   DateTime @default(now())
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  agent   Agent   @relation(fields: [agentId], references: [id])
+
+  @@unique([projectId, agentId])
+  @@index([status])
+}
+
+model Asset {
+  id        String   @id @default(cuid())
+  projectId String
+  type      String
+  name      String
+  url       String
+  ipfsHash  String?
+  metadata  String?
+  createdAt DateTime @default(now())
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@index([type])
+}
+
+model Revenue {
+  id          String   @id @default(cuid())
+  projectId   String?
+  agentId     String?
+  source      String
+  amount      Float
+  tokenSymbol String   @default("VVV")
+  txHash      String?
+  createdAt   DateTime @default(now())
+
+  project Project? @relation(fields: [projectId], references: [id])
+  agent   Agent?   @relation(fields: [agentId], references: [id])
+
+  @@index([createdAt])
+  @@index([agentId])
+}
+
+model FeeConfig {
+  id             String   @id @default(cuid())
+  name           String   @unique
+  scriptAgent    Float    @default(0.40)
+  directorAgent  Float    @default(0.20)
+  renderingAgent Float    @default(0.10)
+  assetAgent     Float    @default(0.10)
+  voiceAgent     Float    @default(0.05)
+  humanProducer  Float    @default(0.10)
+  platformFee    Float    @default(0.05)
+  isActive       Boolean  @default(true)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
