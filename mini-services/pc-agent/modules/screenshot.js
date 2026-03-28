@@ -9,15 +9,17 @@ const { promisify } = require('util')
 const execAsync = promisify(exec)
 
 async function takeScreenshot() {
-  // Prefer screenshot-desktop (cross-platform)
-  try {
-    const screenshot = require('screenshot-desktop')
-    const buf = await screenshot({ format: 'png' })
-    const { width, height } = getScreenSize()
-    return { data: buf.toString('base64'), width, height }
-  } catch {}
+  // On Linux use system tools directly (screenshot-desktop can return black frames)
+  if (os.platform() !== 'linux') {
+    try {
+      const screenshot = require('screenshot-desktop')
+      const buf = await screenshot({ format: 'png' })
+      const { width, height } = getScreenSize()
+      return { data: buf.toString('base64'), width, height }
+    } catch {}
+  }
 
-  // Fallback to OS-specific tools
+  // System tools (Linux: scrot, macOS: screencapture, Windows: PowerShell)
   const tmpFile = path.join(os.tmpdir(), `cc_sc_${Date.now()}.png`)
   try {
     await captureWithSystemTool(tmpFile)
